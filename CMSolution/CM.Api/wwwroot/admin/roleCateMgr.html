@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>人员管理</title>
+  <link rel="stylesheet" href="../assets/layui/css/layui.css">
+  <link rel="stylesheet" href="../assets/css/page.css">
+  <script src="../assets/layui/layui.js"></script>
+  <style>
+    .layui-table-tool{
+      border: none;
+      background-color:#fff;
+      padding: 10px 0;
+    }
+    .layui-table-view{
+      border: none; 
+    }
+      .card-body-left {
+          display: inline-block;
+          width: 200px;
+          height: 350px;
+          float: left;
+          margin-right:15px;
+          background-color: aqua;
+      }
+    .card-body-right{
+        display:flex;
+        flex-direction:column;
+        background-color:antiquewhite;
+    }
+
+    .card-body-left .toolbar{
+        margin:10px auto;
+    }
+    #roleBtn{
+        display:inline-block;
+        float:right;
+    }
+    #roleBtn .layui-btn-primary{
+        border:none;
+    }
+    #roleBtn .layui-btn-sm{
+        height:30px;
+        line-height:30px;
+        padding:0 5px;
+        font-size:12px;
+    }
+    .card-body-left .tree-container{
+        border:solid 1px #f1f1f1;
+        height:300px;
+        margin-top:15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layui-fluid">
+    <div class="layui-card">
+      <div class="layui-card-header">
+        <span class="layui-breadcrumb" lay-separator="&gt;">
+          <a href="">系统设置</a>
+          <a><cite>角色管理</cite></a>
+        </span>
+      </div>
+      <div class="layui-card-body " style="padding-top:0px">
+          <div class="card-body-left">
+              <div class="toolbar">
+                  <span><i class="layui-icon layui-icon-group"></i>&nbsp;选择角色</span>
+                  <div class="layui-btn-group" id="roleBtn">
+                      <a class="layui-btn layui-btn-primary layui-btn-sm" title="添加" lay-event="add">
+                          <i class="layui-icon layui-icon-add-1"></i>
+                      </a>
+                      <a class="layui-btn layui-btn-primary layui-btn-sm" title="刷新" lay-event="delAll">
+                          <i class="layui-icon layui-icon-refresh"></i>
+                      </a>
+                  </div>
+              </div>
+              <div class="tree-container">
+                  <ul id="slTree" class="dtree" data-id="0" style="width:100%;"></ul>
+              </div>
+          </div>
+          <div class="card-body-right">
+              <div class="layui-table-tool">
+                  <table class="layui-table-tool-temp"></table>
+                  <table class="layui-table-tool-self"></table>
+              </div>
+              <div class="tree-container">
+
+              </div>
+          </div>
+        
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+<script src="./js/managerMgr.js"></script>
+</body>
+
+</html>

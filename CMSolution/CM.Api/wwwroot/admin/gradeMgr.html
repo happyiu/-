@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>学生成绩管理</title>
+  <link rel="stylesheet" href="../assets/layui/css/layui.css">
+  <link rel="stylesheet" href="../assets/css/page.css">
+  <script src="../assets/layui/layui.js"></script>
+  <style>
+    .layui-table-tool{
+      border: none;
+      background-color:#fff;
+      padding: 10px 0;
+    }
+    .layui-table-view{
+      border: none; 
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layui-fluid">
+    <div class="layui-card">
+      <div class="layui-card-header">
+        <span class="layui-breadcrumb" lay-separator="&gt;">
+          <a href="">成绩查询</a>
+          <a><cite>16信管1</cite></a>
+        </span>
+      </div>
+      <div class="layui-card-body " style="padding-top:0px">
+        <table class="layui-hide" id="tab" lay-filter="tab"></table>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <script type="text/html" id="mytoolbar">
+
+    <a class="layui-btn layui-btn-primary layui-btn-sm" title="高级搜索" lay-event="adv" >
+        <i class="layui-icon layui-icon-set-fill"></i>
+    </a>
+      <div class="layui-inline">
+        <input class="layui-input" style="height:30px" name="GroupName" id="demoReload"
+        placeholder="学号或姓名关键字"   autocomplete="off">
+      </div>
+      <button class="layui-btn layui-btn-sm" data-type="reload" lay-event="search">
+          <i class="layui-icon layui-icon-search"></i>搜索
+      </button>
+      <div class="layui-btn-group">
+          <button class="layui-btn layui-btn-primary layui-btn-sm" lay-event="add">
+              <i class="layui-icon  layui-icon-add-1"></i>添加
+            </button>
+        <button class="layui-btn layui-btn-primary layui-btn-sm" lay-event="delAll">
+          <i class="layui-icon layui-icon-delete"></i>批删</a>
+        </button>          
+      </div>
+
+  </script>
+  <script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="rowDel">
+        <i class="layui-icon layui-icon-delete"></i>删除</a>
+    <a class="layui-btn layui-btn-xs" lay-event="rowEdit">
+        <i class="layui-icon layui-icon-edit"></i>编辑</a>
+    
+  </script>
+
+
+<script src="./js/gradeMgr.js?v=2019.3.10"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+{
+    "code": 0,
+    "msg": "",
+    "count": 35,
+  "data": [
+    {
+      "sno": "10001",
+      "sname": "张三",
+      "math": 90,
+      "english": 90,
+      "computer": 90
+    },
+    {
+      "sno": "10002",
+      "sname": "张三",
+      "math": 90,
+      "english": 90,
+      "computer": 90
+    },
+    {
+      "sno": "10003",
+      "sname": "张三",
+      "math": 90,
+      "english": 90,
+      "computer": 90
+    },
+    {
+      "sno": "10004",
+      "sname": "张三",
+      "math": 90,
+      "english": 90,
+      "computer": 90
+    },
+    {
+      "sno": "10005",
+      "sname": "张三",
+      "math": 90,
+      "english": 90,
+      "computer": 90
+    },
+    {
+      "sno": "10006",
+      "sname": "张三",
+      "math": 90,
+      "english": 90,
+      "computer": 90
+    },
+    {
+      "sno": "10007",
+      "sname": "张三",
+      "math": 90,
+      "english": 90,
+      "computer": 90
+    },
+    {
+      "sno": "10008",
+      "sname": "张三",
+      "math": 90,
+      "english": 90,
+      "computer": 90
+    },
+    {
+      "sno": "10009",
+      "sname": "张三",
+      "math": 90,
+      "english": 90,
+      "computer": 90
+    }
+
+
+  ]
+}

@@ -1,0 +1,15 @@
+body {
+    padding: 15px 0;
+    background-color: #f6f6f6;
+  }
+  
+  .layui-card-header{
+    border-left: 5px solid #009688;
+    padding-left: 10px;
+    border-bottom: none;
+    position: relative;
+  }
+  .layui-card-body{
+    border-top: 15px solid #f6f6f6;
+    padding-top: 30px;
+  }
